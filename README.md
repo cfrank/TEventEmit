@@ -72,7 +72,7 @@ Once this is run you will get the following output
 
 `hello`
 
-Because it is passed as an argument during the `emit()` function. (The arguments are sent as type `any` so you should declare the correct type when handling the arguments in the function)
+Because it is passed as an `any` argument during the `emit()` function. (The arguments are sent as type `any` so you should declare the correct type when handling the arguments in the function)
 
 ## Finding listeners
 
