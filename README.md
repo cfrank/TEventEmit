@@ -50,7 +50,7 @@ export default class Foo extends TEventEmit
 
     public test(): void{
         // Emit an event
-        this.emit('SampleEvent', ['hello']);
+        this.emit('SampleEvent', ['hello', 'world']);
     }
 }
 
@@ -58,8 +58,8 @@ function main(): number
 {
     let Bar: Foo = new Foo();
 
-    Bar.on('SampleEvent', (hello: string) => {
-        console.log(hello);
+    Bar.on('SampleEvent', (hello: string, world: string) => {
+        console.log(`${hello} ${world}`);
     }, this, false);
 
     Bar.test();
