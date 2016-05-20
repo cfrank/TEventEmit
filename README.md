@@ -12,7 +12,7 @@ This is a simple EventEmitter based on the [eventemitter3](https://github.com/pr
 
 ## Including in your project
 
-Until I get around to adding this to NPM, just clone the repo, and include `index.js` in your project. The following examples assume you put the TEventEmit class in a folder called /TEventEmit/
+Until I get around to adding this to NPM, just clone the repo, and include `TEventEmit.ts` in your project. The following examples assume you put the TEventEmit class in a folder called /TEventEmit/
 
 ```typescript
 import TEventEmit from './TEventEmit/TEventEmit';
