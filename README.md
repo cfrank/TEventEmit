@@ -85,7 +85,10 @@ function main(): number
 Once this is run you will get the following output
 
 `First: true`
-`Second: Array [ main/<() ]`
+
+`Second:`
+
+`Array [ main/<() ]`
 
 You get the results above becuase the first `listeners()` function was supplied with a truthful second argument, so it returns a `boolean` value indicating if there are listeners on the event. The second result is with a false second argument so you get an array of functions on the listener
 
