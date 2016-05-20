@@ -10,6 +10,19 @@ This is a simple EventEmitter based on the [eventemitter3](https://github.com/pr
 * Didn't even include `setMaxListeners()`
 * `EventListeners` instance is always an array of `EventListener` and never a single object. When eventemitter3 would use something like `listener.fn` for a single listener, TEventEmit would use `listener[0].func` it keeps the type static
 
+## How to compile
+
+Compiling is pretty simple, the project is small so there isn't any weird stuff you need to do. I use the following flags when piping into gulp:
+
+```javascript
+'module': 'es6',
+'target': 'es6',
+'noImplicitAny': true,
+'suppressImplicitAnyIndexErrors': true
+```
+
+That last one is required because of [this](https://github.com/Microsoft/TypeScript/issues/1232)
+
 ## Including in your project
 
 Until I get around to adding this to NPM, just clone the repo, and include `TEventEmit.ts` in your project. The following examples assume you put the TEventEmit class in a folder called /TEventEmit/
