@@ -72,7 +72,7 @@ Once this is run you will get the following output
 
 `hello`
 
-When passing the arguments in the `emit()` function remember their types so you can later specify their types in the `on()` function. This allows for correct type errors
+When passing the arguments in the `emit()` function remember their types so you can later specify their types in the `on()` function, because they are passed as type `any` leaving out the hinting will cause an error when using `'noImplicitAny': true`
 
 ## Finding listeners
 
