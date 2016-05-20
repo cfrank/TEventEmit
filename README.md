@@ -114,7 +114,7 @@ function main(): number
 
     Bar.on('SampleEvent', () => {
         i = 13;
-    }, this, false);
+    }, this, true);
 
     Bar.test();
 
